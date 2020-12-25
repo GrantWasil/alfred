@@ -1,0 +1,28 @@
+{
+  "name": "alfred",
+  "version": "1.0.0",
+  "description": "A Discord.js bot for hosting murder mystery parties",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrantWasil/alfred.git"
+  },
+  "author": "Grant Wasil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrantWasil/alfred/issues"
+  },
+  "homepage": "https://github.com/GrantWasil/alfred#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
