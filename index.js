@@ -1,9 +1,17 @@
 require('dotenv').config();
 const fs = require('fs');
 const Discord = require('discord.js');
+const mongoose = require('mongoose');
+const { DATABASE_ADDRESS } = process.env;
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
+
+mongoose.connect(DATABASE_ADDRESS, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,   
+});
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
